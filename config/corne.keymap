@@ -86,7 +86,7 @@
             >;
         };
 
-        lower_layer {
+        nav_num_layer {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
             // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
@@ -97,12 +97,12 @@
             bindings = <
 &next_window      &previous_tab     &kp UP_ARROW  &next_tab     &shift_tab_left   &kp PAGE_UP      &kp KP_MULTIPLY  &kp PLUS         &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp DEL
 &previous_window  &kp LEFT          &kp DOWN      &kp RIGHT     &shift_tab_right  &kp PAGE_DOWN    &kp KP_DIVIDE    &kp MINUS        &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp C_VOLUME_UP
-&task_manager     &windows_options  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2      &trans           &trans           &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp C_VOLUME_DOWN
+&task_manager     &windows_options  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2      &kp C_AC_HOME    &trans           &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp C_VOLUME_DOWN
                                                   &trans        &trans            &kp ENTER        &kp SPACE        &trans           &trans
             >;
         };
 
-        raise_layer {
+        spec_char_layer {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
             // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
