@@ -89,6 +89,16 @@
             bindings = <&kp F4>;
             key-positions = <40 30 20 37>;
         };
+
+        f5_combo {
+            bindings = <&kp F5>;
+            key-positions = <40 30 37 21>;
+        };
+
+        f6_combo {
+            bindings = <&kp F6>;
+            key-positions = <40 30 37 22>;
+        };
     };
 
     behaviors {
