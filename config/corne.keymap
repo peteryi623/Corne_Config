@@ -209,10 +209,10 @@
         spec_char_layer {
             display-name = "Raise";
             bindings = <
-&trans     &kp GRAVE    &kp PERCENT    &kp CARET         &kp DLLR             &trans       &trans     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans          &trans           &kp BSPC
-&trans     &kp AT_SIGN  &kp AMPERSAND  &kp HASH          &kp EXCLAMATION      &trans       &trans     &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp BACKSLASH
-&kp LSHFT  &trans       &trans         &kp MINUS         &kp EQUAL            &trans       &trans     &kp LESS_THAN         &kp GREATER_THAN       &trans          &trans           &kp RIGHT_SHIFT
-                                       &kp LEFT_CONTROL  &hold_tap_layer 1 0  &kp ENTER    &kp SPACE  &hold_tap_layer 1 0   &trans
+&trans     &kp GRAVE    &kp PERCENT    &kp CARET         &kp DLLR             &trans          &trans     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans          &trans           &kp BSPC
+&trans     &kp AT_SIGN  &kp AMPERSAND  &kp HASH          &kp EXCLAMATION      &kp QUESTION    &trans     &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp BACKSLASH
+&kp LSHFT  &trans       &trans         &kp MINUS         &kp EQUAL            &trans          &trans     &kp LESS_THAN         &kp GREATER_THAN       &trans          &trans           &kp RIGHT_SHIFT
+                                       &kp LEFT_CONTROL  &hold_tap_layer 1 0  &kp ENTER       &kp SPACE  &hold_tap_layer 1 0   &trans
             >;
         };
 
