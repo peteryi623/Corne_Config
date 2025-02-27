@@ -160,12 +160,12 @@
             // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
-            display-name = "Base";
+            display-name = "Default";
             bindings = <
-&kp ESC    &kp Q  &kp W  &kp E             &kp R  &kp T        &kp Y      &kp U  &kp I      &kp O    &kp P     &kp BSPC
-&kp TAB    &kp A  &kp S  &kp D             &kp F  &kp G        &kp H      &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z  &kp X  &kp C             &kp V  &kp B        &kp N      &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RIGHT_SHIFT
-                         &kp LEFT_CONTROL  &sl 2  &kp ENTER    &kp SPACE  &sl 3  &mo 1
+&kp ESC    &kp Q  &kp W  &kp E             &kp R  &kp T        &kp Y      &kp U  &kp I            &kp O    &kp P     &kp BSPC
+&kp TAB    &kp A  &kp S  &kp D             &kp F  &kp G        &kp H      &kp J  &kp K            &kp L    &kp SEMI  &kp SQT
+&kp LSHFT  &kp Z  &kp X  &kp C             &kp V  &kp B        &kp N      &kp M  &kp COMMA        &kp DOT  &kp FSLH  &kp RIGHT_SHIFT
+                         &kp LEFT_CONTROL  &sl 2  &kp ENTER    &kp SPACE  &mo 3  &lt 1 RIGHT_ALT
             >;
         };
 
@@ -176,7 +176,7 @@
             // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
-            display-name = "Lower";
+            display-name = "NavNum";
             bindings = <
 &next_window      &previous_tab  &kp UP_ARROW  &next_tab         &shift_tab_right  &kp PAGE_UP      &kp KP_MULTIPLY  &kp PLUS         &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp DEL
 &previous_window  &kp LEFT       &kp DOWN      &kp RIGHT         &shift_tab_left   &kp PAGE_DOWN    &kp KP_DIVIDE    &kp MINUS        &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp C_VOLUME_UP
@@ -186,7 +186,7 @@
         };
 
         spec_char_layer {
-            display-name = "Raise";
+            display-name = "Special";
             bindings = <
 &trans     &kp TILDE    &kp PERCENT    &kp CARET         &kp DLLR         &kp EQUAL       &kp BACKSLASH  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans          &trans           &kp BSPC
 &kp GRAVE  &kp AT_SIGN  &kp AMPERSAND  &kp HASH          &kp EXCLAMATION  &kp QUESTION    &kp SLASH      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE  &kp RIGHT_BRACE  &trans
@@ -196,7 +196,7 @@
         };
 
         media_nav_layer {
-            display-name = "Lower";
+            display-name = "Media";
             bindings = <
 &next_window      &previous_tab  &kp UP_ARROW  &next_tab         &shift_tab_right  &kp PAGE_UP      &kp A         &vlc_toggle_audio_device  &mkp MB1         &mmv MOVE_UP    &mkp MB2         &kp DEL
 &previous_window  &kp LEFT       &kp DOWN      &kp RIGHT         &shift_tab_left   &kp PAGE_DOWN    &kp S         &windows_audio_device     &mmv MOVE_LEFT   &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp C_VOLUME_UP
