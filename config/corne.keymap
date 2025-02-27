@@ -16,28 +16,28 @@
         next_tab: next_tab {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_CONTROL &kp TAB>;
+            bindings = <&sk LEFT_CONTROL &kp TAB>;
             label = "NEXT_TAB";
         };
 
         previous_tab: previous_tab {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_CONTROL &kp LEFT_SHIFT &kp TAB>;
+            bindings = <&sk LEFT_CONTROL &sk LEFT_SHIFT &kp TAB>;
             label = "PREVIOUS_TAB";
         };
 
         next_window: next_window {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_ALT &kp TAB>;
+            bindings = <&sk LEFT_ALT &kp TAB>;
             label = "NEXT_WINDOW";
         };
 
         previous_window: previous_window {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_ALT &kp LEFT_SHIFT &kp TAB>;
+            bindings = <&sk LEFT_ALT &sk LEFT_SHIFT &kp TAB>;
             label = "PREVIOUS_WINDOW";
         };
 
