@@ -16,43 +16,70 @@
         next_tab: next_tab {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press &kp LEFT_CONTROL>
-                , <&macro_tap &kp TAB>
-                , <&macro_release &kp LEFT_CONTROL>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_CONTROL>,
+                <&macro_tap>,
+                <&kp TAB>,
+                <&macro_release>,
+                <&kp LEFT_CONTROL>;
+
             label = "NEXT_TAB";
         };
 
         previous_tab: previous_tab {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press &kp LEFT_CONTROL &kp LEFT_SHIFT>
-                , <&macro_tap &kp TAB>
-                , <&macro_release &kp LEFT_CONTROL &kp LEFT_SHIFT>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_CONTROL &kp LEFT_SHIFT>,
+                <&macro_tap>,
+                <&kp TAB>,
+                <&macro_release>,
+                <&kp LEFT_CONTROL &kp LEFT_SHIFT>;
+
             label = "PREVIOUS_TAB";
         };
 
         next_window: next_window {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press &kp LEFT_ALT>
-                , <&macro_tap &kp TAB>
-                , <&macro_release &kp LEFT_ALT>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp TAB>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
             label = "NEXT_WINDOW";
         };
 
         previous_window: previous_window {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press &kp LEFT_ALT &kp LEFT_SHIFT>
-                , <&macro_tap &kp TAB>
-                , <&macro_release &kp LEFT_ALT &kp LEFT_SHIFT>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT &kp LEFT_SHIFT>,
+                <&macro_tap>,
+                <&kp TAB>,
+                <&macro_release>,
+                <&kp LEFT_ALT &kp LEFT_SHIFT>;
+
             label = "PREVIOUS_WINDOW";
         };
 
         windows_options: windows_options {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_WIN &kp X>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_WIN>,
+                <&macro_tap>,
+                <&kp X>,
+                <&macro_release>,
+                <&kp LEFT_WIN>;
+
             label = "WINDOWS_OPTIONS";
         };
 
@@ -66,14 +93,28 @@
         shift_tab_right: shift_tab_right {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_CONTROL &kp LEFT_SHIFT &kp PAGE_DOWN>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_CONTROL &kp LEFT_SHIFT>,
+                <&macro_tap>,
+                <&kp PAGE_DOWN>,
+                <&macro_release>,
+                <&kp LEFT_CONTROL &kp LEFT_SHIFT>;
+
             label = "SHIFT_TAB_RIGHT";
         };
 
         shift_tab_left: shift_tab_left {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_CONTROL &kp LEFT_SHIFT &kp PAGE_UP>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_CONTROL &kp LEFT_SHIFT>,
+                <&macro_tap>,
+                <&kp PAGE_UP>,
+                <&macro_release>,
+                <&kp LEFT_CONTROL &kp LEFT_SHIFT>;
+
             label = "SHIFT_TAB_LEFT";
         };
 
@@ -207,9 +248,9 @@
         media_nav_layer {
             display-name = "Media";
             bindings = <
-&next_window      &previous_tab  &kp UP_ARROW  &next_tab         &shift_tab_right  &kp PAGE_UP      &kp A         &vlc_toggle_audio_device  &mkp MB1         &mmv MOVE_UP    &mkp MB2         &kp DEL
-&previous_window  &kp LEFT       &kp DOWN      &kp RIGHT         &shift_tab_left   &kp PAGE_DOWN    &kp S         &windows_audio_device     &mmv MOVE_LEFT   &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp C_VOLUME_UP
-&kp LEFT_SHIFT    &trans         &kp F11       &kp P             &kp N             &kp C_AC_HOME    &bt BT_SEL 0  &bt BT_SEL 1              &bt BT_SEL 2     &bt BT_CLR      &out OUT_TOG     &kp C_VOLUME_DOWN
+&next_window      &previous_tab  &kp UP_ARROW  &next_tab         &shift_tab_right  &kp PAGE_UP      &kp A         &vlc_toggle_audio_device  &mkp MB1         &mmv MOVE_UP    &mkp MB2         &out OUT_TOG
+&previous_window  &kp LEFT       &kp DOWN      &kp RIGHT         &shift_tab_left   &kp PAGE_DOWN    &kp S         &windows_audio_device     &mmv MOVE_LEFT   &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &bt BT_CLR
+&kp LEFT_SHIFT    &trans         &kp F11       &kp P             &kp N             &kp C_AC_HOME    &bt BT_SEL 0  &bt BT_SEL 1              &bt BT_SEL 2     &bt BT_SEL 3    &bt BT_SEL 4     &bt BT_CLR_ALL
                                                &kp LEFT_CONTROL  &tog 0            &kp ENTER        &kp SPACE     &tog 0                    &lt 1 RIGHT_ALT
             >;
         };
