@@ -60,11 +60,11 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LEFT_ALT &kp LEFT_SHIFT>,
+                <&kp LEFT_SHIFT>,
                 <&macro_tap>,
                 <&kp TAB>,
                 <&macro_release>,
-                <&kp LEFT_ALT &kp LEFT_SHIFT>;
+                <&kp LEFT_SHIFT>;
 
             label = "PREVIOUS_WINDOW";
         };
@@ -86,7 +86,8 @@
         task_manager: task_manager {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_CONTROL &kp LEFT_ALT &kp DEL>;
+            bindings = <&macro_tap>, <&kp LEFT_CONTROL &kp LEFT_ALT &kp DEL>;
+
             label = "TASK_MANAGER";
         };
 
@@ -121,21 +122,36 @@
         vlc_playlist: vlc_playlist {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_CONTROL &kp L>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_CONTROL>,
+                <&macro_tap>,
+                <&kp L>,
+                <&macro_release>,
+                <&kp LEFT_CONTROL>;
+
             label = "VLC_PLAYLIST";
         };
 
         vlc_toggle_audio_device: vlc_toggle_audio_device {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_SHIFT &kp A>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_SHIFT>,
+                <&macro_tap>,
+                <&kp A>,
+                <&macro_release>,
+                <&kp LEFT_SHIFT>;
+
             label = "VLC_TOGGLE_AUDIO_DEVICE";
         };
 
         windows_audio_device: windows_audio_device {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_WIN &kp LEFT_CONTROL &kp V>;
+            bindings = <&macro_tap>, <&kp LEFT_WIN &kp LEFT_CONTROL &kp V>;
+
             label = "WINDOWS_AUDIO_DEVICE";
         };
     };
@@ -228,10 +244,10 @@
 
             display-name = "NavNum";
             bindings = <
-&next_window      &previous_tab  &kp UP_ARROW  &next_tab         &shift_tab_right  &kp PAGE_UP      &kp KP_MULTIPLY  &kp PLUS         &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp DEL
-&previous_window  &kp LEFT       &kp DOWN      &kp RIGHT         &shift_tab_left   &kp PAGE_DOWN    &kp KP_DIVIDE    &kp MINUS        &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp C_VOLUME_UP
-&kp LEFT_SHIFT    &trans         &kp F11       &task_manager     &windows_options  &kp C_AC_HOME    &kp EQUAL        &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp C_VOLUME_DOWN
-                                               &kp LEFT_CONTROL  &trans            &kp ENTER        &kp SPACE        &trans           &trans
+&kp TAB           &shift_tab_right  &previous_tab  &kp UP_ARROW      &next_tab         &kp PAGE_UP      &kp KP_PLUS   &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_MULTIPLY  &kp DEL
+&previous_window  &shift_tab_left   &kp LEFT       &kp DOWN          &kp RIGHT         &kp PAGE_DOWN    &kp KP_MINUS  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_DIVIDE    &kp C_VOLUME_UP
+&kp LEFT_SHIFT    &trans            &kp F11        &task_manager     &windows_options  &kp C_AC_HOME    &kp KP_N0     &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp EQUAL        &kp C_VOLUME_DOWN
+                                                   &kp LEFT_CONTROL  &kp LEFT_ALT      &kp ENTER        &kp SPACE     &trans     &trans
             >;
         };
 
@@ -248,10 +264,10 @@
         media_nav_layer {
             display-name = "Media";
             bindings = <
-&next_window      &previous_tab  &kp UP_ARROW  &next_tab         &shift_tab_right  &kp PAGE_UP      &kp A         &vlc_toggle_audio_device  &mkp MB1        &mmv MOVE_UP    &mkp MB2         &out OUT_TOG
-&previous_window  &kp LEFT       &kp DOWN      &kp RIGHT         &shift_tab_left   &kp PAGE_DOWN    &kp S         &windows_audio_device     &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &bt BT_CLR
-&kp LEFT_SHIFT    &trans         &kp F11       &kp P             &kp N             &kp C_AC_HOME    &bt BT_SEL 0  &bt BT_SEL 1              &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4     &bt BT_CLR_ALL
-                                               &kp LEFT_CONTROL  &trans            &kp ENTER        &kp SPACE     &trans                    &trans
+&next_window      &previous_tab  &kp UP_ARROW  &next_tab         &shift_tab_right  &kp PAGE_UP      &kp A         &mkp MB1        &mmv MOVE_UP    &mkp MB2         &vlc_toggle_audio_device  &out OUT_TOG
+&previous_window  &kp LEFT       &kp DOWN      &kp RIGHT         &shift_tab_left   &kp PAGE_DOWN    &kp S         &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &windows_audio_device     &bt BT_CLR
+&kp LEFT_SHIFT    &trans         &kp F11       &kp P             &kp N             &kp C_AC_HOME    &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3     &bt BT_SEL 4              &bt BT_CLR_ALL
+                                               &kp LEFT_CONTROL  &trans            &kp ENTER        &kp SPACE     &trans          &trans
             >;
         };
     };
