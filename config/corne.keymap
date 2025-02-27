@@ -231,7 +231,7 @@
 &kp ESC    &kp Q  &kp W  &kp E             &kp R  &kp T        &kp Y      &kp U  &kp I            &kp O    &kp P     &kp BSPC
 &kp TAB    &kp A  &kp S  &kp D             &kp F  &kp G        &kp H      &kp J  &kp K            &kp L    &kp SEMI  &kp SQT
 &kp LSHFT  &kp Z  &kp X  &kp C             &kp V  &kp B        &kp N      &kp M  &kp COMMA        &kp DOT  &kp FSLH  &kp RIGHT_SHIFT
-                         &kp LEFT_CONTROL  &mo 2  &kp ENTER    &kp SPACE  &mo 3  &lt 1 RIGHT_ALT
+                         &kp LEFT_CONTROL  &mo 1  &kp ENTER    &kp SPACE  &mo 2  &lt 3 RIGHT_ALT
             >;
         };
 
@@ -244,10 +244,10 @@
 
             display-name = "NavNum";
             bindings = <
-&kp TAB           &shift_tab_right  &previous_tab  &kp UP_ARROW      &next_tab         &kp PAGE_UP      &kp KP_PLUS   &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_MULTIPLY  &kp DEL
-&previous_window  &shift_tab_left   &kp LEFT       &kp DOWN          &kp RIGHT         &kp PAGE_DOWN    &kp KP_MINUS  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_DIVIDE    &kp C_VOLUME_UP
-&kp LEFT_SHIFT    &trans            &kp F11        &task_manager     &windows_options  &kp C_AC_HOME    &kp KP_N0     &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp EQUAL        &kp C_VOLUME_DOWN
-                                                   &kp LEFT_CONTROL  &kp LEFT_ALT      &kp ENTER        &kp SPACE     &trans     &trans
+&kp TAB           &shift_tab_right  &previous_tab  &kp UP_ARROW      &next_tab     &kp PAGE_UP      &kp KP_PLUS   &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_MULTIPLY  &kp DEL
+&previous_window  &shift_tab_left   &kp LEFT       &kp DOWN          &kp RIGHT     &kp PAGE_DOWN    &kp KP_MINUS  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_DIVIDE    &kp C_VOLUME_UP
+&kp LEFT_SHIFT    &trans            &kp F11        &trans            &kp LEFT_ALT  &kp C_AC_HOME    &kp KP_N0     &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp EQUAL        &kp C_VOLUME_DOWN
+                                                   &kp LEFT_CONTROL  &trans        &kp ENTER        &kp SPACE     &trans     &trans
             >;
         };
 
