@@ -200,7 +200,7 @@
             bindings = <
 &next_window      &previous_tab  &kp UP_ARROW  &next_tab         &shift_tab_right  &kp PAGE_UP      &kp A         &vlc_toggle_audio_device  &mkp MB1         &mmv MOVE_UP    &mkp MB2         &kp DEL
 &previous_window  &kp LEFT       &kp DOWN      &kp RIGHT         &shift_tab_left   &kp PAGE_DOWN    &kp S         &windows_audio_device     &mmv MOVE_LEFT   &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp C_VOLUME_UP
-&kp LEFT_SHIFT    &trans         &kp F11       &kp P             &kp N             &kp C_AC_HOME    &bt BT_SEL 0  &bt BT_SEL 1              &bt BT_SEL 2     &bt BT_SEL 3    &bt BT_SEL 4     &kp C_VOLUME_DOWN
+&kp LEFT_SHIFT    &trans         &kp F11       &kp P             &kp N             &kp C_AC_HOME    &bt BT_SEL 0  &bt BT_SEL 1              &bt BT_SEL 2     &bt BT_SEL 3    &bt BT_CLR       &kp C_VOLUME_DOWN
                                                &kp LEFT_CONTROL  &mo 0             &kp ENTER        &kp SPACE     &mo 0                     &lt 1 RIGHT_ALT
             >;
         };
