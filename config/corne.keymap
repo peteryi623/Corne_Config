@@ -244,10 +244,10 @@
 
             display-name = "NavNum";
             bindings = <
-&kp TAB           &shift_tab_right  &previous_tab  &kp UP_ARROW      &next_tab     &kp PAGE_UP      &kp KP_PLUS   &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_MULTIPLY  &kp DEL
-&previous_window  &shift_tab_left   &kp LEFT       &kp DOWN          &kp RIGHT     &kp PAGE_DOWN    &kp KP_MINUS  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_DIVIDE    &kp C_VOLUME_UP
-&kp LEFT_SHIFT    &trans            &kp F11        &trans            &kp LEFT_ALT  &kp C_AC_HOME    &kp KP_N0     &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp EQUAL        &kp C_VOLUME_DOWN
-                                                   &kp LEFT_CONTROL  &trans        &kp ENTER        &kp SPACE     &trans     &trans
+&kp TAB           &shift_tab_right  &previous_tab  &kp UP_ARROW   &next_tab     &kp PAGE_UP         &kp KP_PLUS   &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_MULTIPLY  &kp DEL
+&previous_window  &shift_tab_left   &kp LEFT       &kp DOWN       &kp RIGHT     &kp PAGE_DOWN       &kp KP_MINUS  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_DIVIDE    &kp C_VOLUME_UP
+&kp LEFT_SHIFT    &kp F11           &trans         &kp C_AC_HOME  &kp LEFT_ALT  &kp LEFT_CONTROL    &kp KP_N0     &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp EQUAL        &kp C_VOLUME_DOWN
+                                                   &trans         &trans        &kp ENTER           &kp SPACE     &trans     &trans
             >;
         };
 
@@ -264,10 +264,10 @@
         media_nav_layer {
             display-name = "Media";
             bindings = <
-&next_window      &previous_tab  &kp UP_ARROW  &next_tab         &shift_tab_right  &kp PAGE_UP      &kp A         &mkp MB1        &mmv MOVE_UP    &mkp MB2         &vlc_toggle_audio_device  &out OUT_TOG
-&previous_window  &kp LEFT       &kp DOWN      &kp RIGHT         &shift_tab_left   &kp PAGE_DOWN    &kp S         &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &windows_audio_device     &bt BT_CLR
-&kp LEFT_SHIFT    &trans         &kp F11       &kp P             &kp N             &kp C_AC_HOME    &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3     &bt BT_SEL 4              &bt BT_CLR_ALL
-                                               &kp LEFT_CONTROL  &trans            &kp ENTER        &kp SPACE     &trans          &trans
+&next_window      &shift_tab_right  &previous_tab  &kp UP_ARROW      &next_tab  &kp PAGE_UP         &kp A         &mkp MB1        &mmv MOVE_UP    &mkp MB2         &vlc_toggle_audio_device  &out OUT_TOG
+&previous_window  &shift_tab_left   &kp LEFT       &kp DOWN          &kp RIGHT  &kp PAGE_DOWN       &kp S         &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &windows_audio_device     &bt BT_CLR
+&kp LEFT_SHIFT    &kp F11           &trans         &kp P             &kp N      &kp LEFT_CONTROL    &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3     &bt BT_SEL 4              &bt BT_CLR_ALL
+                                                   &kp LEFT_CONTROL  &trans     &kp ENTER           &kp SPACE     &trans          &trans
             >;
         };
     };
