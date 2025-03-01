@@ -326,7 +326,7 @@
             hold-trigger-key-positions = <37 40>;
             bindings = <&mo>, <&tog>;
 
-            flavor = "balanced";
+            flavor = "tap-unless-interrupted";
         };
 
         hold_tap_direct: hold_tap_direct {
@@ -337,7 +337,7 @@
             hold-trigger-key-positions = <37 40>;
             bindings = <&mo>, <&to>;
 
-            flavor = "balanced";
+            flavor = "tap-unless-interrupted";
         };
     };
 
