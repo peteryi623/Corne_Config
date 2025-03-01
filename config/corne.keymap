@@ -310,18 +310,22 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOLD_TAP_LAYER";
             #binding-cells = <2>;
-            tapping-term-ms = <50>;
+            tapping-term-ms = <100>;
             hold-trigger-key-positions = <37 40>;
             bindings = <&mo>, <&tog>;
+
+            flavor = "balanced";
         };
 
         hold_tap_direct: hold_tap_direct {
             compatible = "zmk,behavior-hold-tap";
             label = "HOLD_TAP_DIRECT";
             #binding-cells = <2>;
-            tapping-term-ms = <50>;
+            tapping-term-ms = <100>;
             hold-trigger-key-positions = <37 40>;
             bindings = <&mo>, <&to>;
+
+            flavor = "balanced";
         };
     };
 
