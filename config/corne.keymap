@@ -203,6 +203,11 @@
             bindings = <&kp F9>;
             key-positions = <37 41 10>;
         };
+
+        space_combo {
+            bindings = <&kp ENTER>;
+            key-positions = <38 39>;
+        };
     };
 
     behaviors {
@@ -228,10 +233,10 @@
 
             display-name = "Default";
             bindings = <
-&kp ESC    &kp Q  &kp W  &kp E             &kp R  &kp T        &kp Y      &kp U  &kp I            &kp O    &kp P     &kp BSPC
-&kp TAB    &kp A  &kp S  &kp D             &kp F  &kp G        &kp H      &kp J  &kp K            &kp L    &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z  &kp X  &kp C             &kp V  &kp B        &kp N      &kp M  &kp COMMA        &kp DOT  &kp FSLH  &kp RIGHT_SHIFT
-                         &kp LEFT_CONTROL  &mo 1  &kp ENTER    &kp SPACE  &mo 2  &lt 3 RIGHT_ALT
+&kp ESC    &kp Q  &kp W  &kp E             &kp R                &kp T        &kp Y      &kp U                &kp I          &kp O    &kp P     &kp BSPC
+&kp TAB    &kp A  &kp S  &kp D             &kp F                &kp G        &kp H      &kp J                &kp K          &kp L    &kp SEMI  &kp SQT
+&kp LSHFT  &kp Z  &kp X  &kp C             &kp V                &kp B        &kp N      &kp M                &kp COMMA      &kp DOT  &kp FSLH  &kp RIGHT_SHIFT
+                         &kp LEFT_CONTROL  &hold_tap_layer 1 2  &kp SPACE    &kp SPACE  &hold_tap_layer 1 3  &kp RIGHT_ALT
             >;
         };
 
@@ -246,8 +251,8 @@
             bindings = <
 &kp TAB           &shift_tab_right  &previous_tab  &kp UP_ARROW   &next_tab     &kp PAGE_UP         &kp KP_PLUS   &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_MULTIPLY  &kp DEL
 &previous_window  &shift_tab_left   &kp LEFT       &kp DOWN       &kp RIGHT     &kp PAGE_DOWN       &kp KP_MINUS  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_DIVIDE    &kp C_VOLUME_UP
-&kp LEFT_SHIFT    &kp F11           &trans         &kp C_AC_HOME  &kp LEFT_ALT  &kp LEFT_CONTROL    &kp KP_N0     &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp EQUAL        &kp C_VOLUME_DOWN
-                                                   &trans         &trans        &kp ENTER           &kp SPACE     &trans     &trans
+&kp LEFT_SHIFT    &kp F11           &kp C_AC_DEL   &kp C_AC_HOME  &kp LEFT_ALT  &kp LEFT_CONTROL    &kp KP_N0     &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp EQUAL        &kp C_VOLUME_DOWN
+                                                   &trans         &trans        &kp SPACE           &kp SPACE     &trans     &trans
             >;
         };
 
@@ -257,7 +262,7 @@
 &trans     &kp TILDE    &kp PERCENT    &kp CARET         &kp DLLR         &kp EQUAL       &kp BACKSLASH  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans          &trans           &kp BSPC
 &kp GRAVE  &kp AT_SIGN  &kp AMPERSAND  &kp HASH          &kp EXCLAMATION  &kp QUESTION    &kp SLASH      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE  &kp RIGHT_BRACE  &trans
 &kp LSHFT  &trans       &trans         &kp UNDERSCORE    &kp MINUS        &trans          &kp PIPE       &kp LESS_THAN         &kp GREATER_THAN       &trans          &trans           &kp RIGHT_SHIFT
-                                       &kp LEFT_CONTROL  &trans           &kp ENTER       &kp SPACE      &trans                &trans
+                                       &kp LEFT_CONTROL  &tog 2           &kp ENTER       &kp SPACE      &tog 2                &trans
             >;
         };
 
@@ -267,7 +272,7 @@
 &next_window      &shift_tab_right  &previous_tab  &kp UP_ARROW      &next_tab  &kp PAGE_UP         &kp A         &mkp MB1        &mmv MOVE_UP    &mkp MB2         &vlc_toggle_audio_device  &out OUT_TOG
 &previous_window  &shift_tab_left   &kp LEFT       &kp DOWN          &kp RIGHT  &kp PAGE_DOWN       &kp S         &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &windows_audio_device     &bt BT_CLR
 &kp LEFT_SHIFT    &kp F11           &trans         &kp P             &kp N      &kp LEFT_CONTROL    &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3     &bt BT_SEL 4              &bt BT_CLR_ALL
-                                                   &kp LEFT_CONTROL  &trans     &kp ENTER           &kp SPACE     &trans          &trans
+                                                   &kp LEFT_CONTROL  &tog 3     &kp ENTER           &kp SPACE     &tog 3          &trans
             >;
         };
     };
