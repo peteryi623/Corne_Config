@@ -86,7 +86,13 @@
         task_manager: task_manager {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_tap>, <&kp LEFT_CONTROL &kp LEFT_ALT &kp DEL>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_CONTROL &kp LEFT_ALT>,
+                <&macro_press>,
+                <&kp DEL>,
+                <&macro_release>,
+                <&kp LEFT_CONTROL &kp LEFT_ALT>;
 
             label = "TASK_MANAGER";
         };
@@ -150,7 +156,13 @@
         windows_audio_device: windows_audio_device {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_tap>, <&kp LEFT_WIN &kp LEFT_CONTROL &kp V>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_WIN &kp LEFT_CONTROL>,
+                <&macro_tap>,
+                <&kp V>,
+                <&macro_release>,
+                <&kp LEFT_WIN &kp LEFT_CONTROL>;
 
             label = "WINDOWS_AUDIO_DEVICE";
         };
