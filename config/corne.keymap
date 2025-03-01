@@ -371,7 +371,7 @@
             bindings = <
 &kp TAB           &shift_tab_right  &previous_tab  &kp UP_ARROW   &next_tab     &kp PAGE_UP      &kp KP_PLUS   &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_MULTIPLY  &kp DEL
 &previous_window  &shift_tab_left   &kp LEFT       &kp DOWN       &kp RIGHT     &kp PAGE_DOWN    &kp KP_MINUS  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_DIVIDE    &kp C_VOLUME_UP
-&kp LEFT_SHIFT    &kp F11           &kp C_AC_DEL   &kp C_AC_HOME  &kp LEFT_ALT  &kp LEFT_WIN     &kp KP_N0     &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp EQUAL        &kp C_VOLUME_DOWN
+&kp LEFT_SHIFT    &kp F11           &trans         &kp C_AC_HOME  &kp LEFT_ALT  &kp LEFT_WIN     &kp KP_N0     &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp EQUAL        &kp C_VOLUME_DOWN
                                                    &trans         &trans        &kp SPACE        &kp SPACE     &trans     &trans
             >;
         };
@@ -390,7 +390,7 @@
             display-name = "Function";
             bindings = <
 &kp TAB           &shift_tab_right  &previous_tab  &kp UP_ARROW      &next_tab             &kp PAGE_UP         &kp F2        &tab_7               &tab_8  &tab_9  &trans  &task_manager
-&previous_window  &shift_tab_left   &kp LEFT       &kp DOWN          &kp RIGHT             &kp PAGE_DOWN       &kp CAPSLOCK  &tab_4               &tab_5  &tab_6  &trans  &trans
+&previous_window  &shift_tab_left   &kp LEFT       &kp DOWN          &kp RIGHT             &kp PAGE_DOWN       &kp CAPSLOCK  &tab_4               &tab_5  &tab_6  &trans  &windows_options
 &kp LEFT_SHIFT    &kp F11           &trans         &kp P             &kp N                 &kp LEFT_CONTROL    &tab_end      &tab_1               &tab_2  &tab_3  &trans  &trans
                                                    &kp LEFT_CONTROL  &hold_tap_direct 1 2  &kp SPACE           &kp SPACE     &hold_tap_layer 1 3  &to 4
             >;
