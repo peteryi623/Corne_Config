@@ -154,55 +154,150 @@
 
             label = "WINDOWS_AUDIO_DEVICE";
         };
+
+        tab_1: tab_1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_CONTROL>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_1>,
+                <&macro_release>,
+                <&kp LEFT_CONTROL>;
+
+            label = "TAB_1";
+        };
+
+        tab_2: tab_2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_CONTROL>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_2>,
+                <&macro_release>,
+                <&kp LEFT_CONTROL>;
+
+            label = "TAB_2";
+        };
+
+        tab_3: tab_3 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_CONTROL>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_3>,
+                <&macro_release>,
+                <&kp LEFT_CONTROL>;
+
+            label = "TAB_3";
+        };
+
+        tab_4: tab_4 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_CONTROL>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_4>,
+                <&macro_release>,
+                <&kp LEFT_CONTROL>;
+
+            label = "TAB_4";
+        };
+
+        tab_5: tab_5 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_CONTROL>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_5>,
+                <&macro_release>,
+                <&kp LEFT_CONTROL>;
+
+            label = "TAB_5";
+        };
+
+        tab_6: tab_6 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_CONTROL>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_6>,
+                <&macro_release>,
+                <&kp LEFT_CONTROL>;
+
+            label = "TAB_6";
+        };
+
+        tab_7: tab_7 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_CONTROL>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_7>,
+                <&macro_release>,
+                <&kp LEFT_CONTROL>;
+
+            label = "TAB_7";
+        };
+
+        tab_8: tab_8 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_CONTROL>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_8>,
+                <&macro_release>,
+                <&kp LEFT_CONTROL>;
+
+            label = "TAB_8";
+        };
+
+        tab_9: tab_9 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_CONTROL>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_9>,
+                <&macro_release>,
+                <&kp LEFT_CONTROL>;
+
+            label = "TAB_9";
+        };
+
+        tab_end: tab_end {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_CONTROL>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_0>,
+                <&macro_release>,
+                <&kp LEFT_CONTROL>;
+
+            label = "TAB_END";
+        };
     };
 
     combos {
         compatible = "zmk,combos";
-
-        f1_combo {
-            bindings = <&kp F1>;
-            key-positions = <32 37 41>;
-        };
-
-        f2_combo {
-            bindings = <&kp F2>;
-            key-positions = <33 37 41>;
-        };
-
-        f3_combo {
-            bindings = <&kp F3>;
-            key-positions = <34 37 41>;
-        };
-
-        f4_combo {
-            bindings = <&kp F4>;
-            key-positions = <20 37 41>;
-        };
-
-        f5_combo {
-            bindings = <&kp F5>;
-            key-positions = <37 21 41>;
-        };
-
-        f6_combo {
-            bindings = <&kp F6>;
-            key-positions = <37 22 41>;
-        };
-
-        f7_combo {
-            bindings = <&kp F7>;
-            key-positions = <37 41 8>;
-        };
-
-        f8_combo {
-            bindings = <&kp F8>;
-            key-positions = <37 41 9>;
-        };
-
-        f9_combo {
-            bindings = <&kp F9>;
-            key-positions = <37 41 10>;
-        };
 
         space_combo {
             bindings = <&kp ENTER>;
@@ -215,9 +310,18 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOLD_TAP_LAYER";
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <100>;
             hold-trigger-key-positions = <37 40>;
             bindings = <&mo>, <&tog>;
+        };
+
+        hold_tap_direct: hold_tap_direct {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_TAP_DIRECT";
+            #binding-cells = <2>;
+            tapping-term-ms = <100>;
+            hold-trigger-key-positions = <37 40>;
+            bindings = <&mo>, <&to>;
         };
     };
 
@@ -233,10 +337,10 @@
 
             display-name = "Default";
             bindings = <
-&kp ESC    &kp Q  &kp W  &kp E             &kp R                &kp T        &kp Y      &kp U                &kp I          &kp O    &kp P     &kp BSPC
-&kp TAB    &kp A  &kp S  &kp D             &kp F                &kp G        &kp H      &kp J                &kp K          &kp L    &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z  &kp X  &kp C             &kp V                &kp B        &kp N      &kp M                &kp COMMA      &kp DOT  &kp FSLH  &kp RIGHT_SHIFT
-                         &kp LEFT_CONTROL  &hold_tap_layer 1 2  &kp SPACE    &kp SPACE  &hold_tap_layer 1 3  &kp RIGHT_ALT
+&kp ESC    &kp Q  &kp W  &kp E             &kp R                &kp T        &kp Y      &kp U                &kp I      &kp O    &kp P     &kp BSPC
+&kp TAB    &kp A  &kp S  &kp D             &kp F                &kp G        &kp H      &kp J                &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LSHFT  &kp Z  &kp X  &kp C             &kp V                &kp B        &kp N      &kp M                &kp COMMA  &kp DOT  &kp FSLH  &kp RIGHT_SHIFT
+                         &kp LEFT_CONTROL  &hold_tap_layer 1 2  &kp SPACE    &kp SPACE  &hold_tap_layer 1 3  &tog 4
             >;
         };
 
@@ -259,20 +363,30 @@
         spec_char_layer {
             display-name = "Special";
             bindings = <
-&trans     &kp TILDE    &kp PERCENT    &kp CARET         &kp DLLR         &kp EQUAL       &kp BACKSLASH  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans          &trans           &kp BSPC
-&kp GRAVE  &kp AT_SIGN  &kp AMPERSAND  &kp HASH          &kp EXCLAMATION  &kp QUESTION    &kp SLASH      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE  &kp RIGHT_BRACE  &trans
-&kp LSHFT  &trans       &trans         &kp UNDERSCORE    &kp MINUS        &trans          &kp PIPE       &kp LESS_THAN         &kp GREATER_THAN       &trans          &trans           &kp RIGHT_SHIFT
-                                       &kp LEFT_CONTROL  &tog 2           &kp ENTER       &kp SPACE      &tog 2                &trans
+&trans     &kp TILDE    &kp PERCENT    &kp CARET         &kp DLLR             &kp EQUAL       &kp BACKSLASH  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans          &trans           &trans
+&kp GRAVE  &kp AT_SIGN  &kp AMPERSAND  &kp HASH          &kp EXCLAMATION      &kp QUESTION    &kp SLASH      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE  &kp RIGHT_BRACE  &trans
+&kp LSHFT  &trans       &trans         &kp UNDERSCORE    &kp MINUS            &trans          &kp PIPE       &kp LESS_THAN         &kp GREATER_THAN       &trans          &trans           &kp RIGHT_SHIFT
+                                       &kp LEFT_CONTROL  &hold_tap_layer 1 2  &kp SPACE       &kp SPACE      &hold_tap_layer 1 3   &to 4
             >;
         };
 
-        media_nav_layer {
+        function_layer {
+            display-name = "Function";
+            bindings = <
+&next_window      &shift_tab_right  &previous_tab  &kp UP_ARROW      &next_tab             &kp PAGE_UP         &kp A      &tab_7               &tab_8  &tab_9  &vlc_toggle_audio_device  &kp C_POWER
+&previous_window  &shift_tab_left   &kp LEFT       &kp DOWN          &kp RIGHT             &kp PAGE_DOWN       &kp S      &tab_4               &tab_5  &tab_6  &windows_audio_device     &kp C_SLEEP
+&kp LEFT_SHIFT    &kp F11           &trans         &kp P             &kp N                 &kp LEFT_CONTROL    &tab_end   &tab_1               &tab_2  &tab_3  &bt BT_SEL 4              &bt BT_CLR_ALL
+                                                   &kp LEFT_CONTROL  &hold_tap_direct 1 2  &kp SPACE           &kp SPACE  &hold_tap_layer 1 3  &to 4
+            >;
+        };
+
+        media_layer {
             display-name = "Media";
             bindings = <
-&next_window      &shift_tab_right  &previous_tab  &kp UP_ARROW      &next_tab  &kp PAGE_UP         &kp A         &mkp MB1        &mmv MOVE_UP    &mkp MB2         &vlc_toggle_audio_device  &out OUT_TOG
-&previous_window  &shift_tab_left   &kp LEFT       &kp DOWN          &kp RIGHT  &kp PAGE_DOWN       &kp S         &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &windows_audio_device     &bt BT_CLR
-&kp LEFT_SHIFT    &kp F11           &trans         &kp P             &kp N      &kp LEFT_CONTROL    &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3     &bt BT_SEL 4              &bt BT_CLR_ALL
-                                                   &kp LEFT_CONTROL  &tog 3     &kp ENTER           &kp SPACE     &tog 3          &trans
+&next_window      &shift_tab_right  &previous_tab  &kp UP_ARROW      &next_tab             &kp PAGE_UP         &kp A         &mkp MB1              &mmv MOVE_UP    &mkp MB2         &vlc_toggle_audio_device  &out OUT_TOG
+&previous_window  &shift_tab_left   &kp LEFT       &kp DOWN          &kp RIGHT             &kp PAGE_DOWN       &kp S         &mmv MOVE_LEFT        &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &windows_audio_device     &bt BT_CLR
+&kp LEFT_SHIFT    &kp F11           &trans         &kp P             &kp N                 &kp LEFT_CONTROL    &bt BT_SEL 0  &bt BT_SEL 1          &bt BT_SEL 2    &bt BT_SEL 3     &bt BT_SEL 4              &bt BT_CLR_ALL
+                                                   &kp LEFT_CONTROL  &hold_tap_direct 1 2  &kp SPACE           &kp SPACE     &hold_tap_direct 1 3  &tog 4
             >;
         };
     };
