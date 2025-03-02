@@ -321,14 +321,6 @@
             label = "FILE_EXPLORER";
         };
 
-        disable_2_moment_1: disable_layer {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&macro_tap>, <&tog 2>, <&macro_tap>, <&mo 1>;
-
-            label = "DISABLE_LAYER";
-        };
-
         new_window: new_window {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -440,6 +432,76 @@
 
             label = "OPEN";
         };
+
+        copy: copy {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_CONTROL>,
+                <&macro_tap>,
+                <&kp C>,
+                <&macro_press>,
+                <&kp LEFT_CONTROL>;
+
+            label = "COPY";
+        };
+
+        paste: paste {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_CONTROL>,
+                <&macro_tap>,
+                <&kp P>,
+                <&macro_press>,
+                <&kp LEFT_CONTROL>;
+
+            label = "PASTE";
+        };
+
+        cut: cut {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_CONTROL>,
+                <&macro_tap>,
+                <&kp X>,
+                <&macro_press>,
+                <&kp LEFT_CONTROL>;
+
+            label = "CUT";
+        };
+
+        redo: redo {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_CONTROL>,
+                <&macro_tap>,
+                <&kp Y>,
+                <&macro_press>,
+                <&kp LEFT_CONTROL>;
+
+            label = "REDO";
+        };
+
+        reload: reload {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_CONTROL>,
+                <&macro_tap>,
+                <&kp R>,
+                <&macro_press>,
+                <&kp LEFT_CONTROL>;
+
+            label = "RELOAD";
+        };
     };
 
     combos {
@@ -477,16 +539,6 @@
             bindings = <&mo>, <&to>;
 
             flavor = "balanced";
-        };
-
-        disable_2_moment_1_custom: disable_2_moment_1_custom {
-            compatible = "zmk,behavior-hold-tap";
-            label = "DISABLE_2_MOMENT_1_CUSTOM";
-            #binding-cells = <2>;
-            tapping-term-ms = <100>;
-            hold-trigger-key-positions = <37>;
-            flavor = "balanced";
-            bindings = <&disable_2_moment_1>, <&tog>;
         };
     };
 
@@ -528,20 +580,20 @@
         spec_char_layer {
             display-name = "Special";
             bindings = <
-&trans     &kp TILDE    &kp PERCENT    &kp CARET         &kp DLLR                        &kp EQUAL       &kp BACKSLASH  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans          &trans           &trans
-&kp GRAVE  &kp AT_SIGN  &kp AMPERSAND  &kp HASH          &kp EXCLAMATION                 &kp QUESTION    &kp SLASH      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE  &kp RIGHT_BRACE  &trans
-&kp LSHFT  &trans       &trans         &kp UNDERSCORE    &kp MINUS                       &trans          &kp PIPE       &kp LESS_THAN         &kp GREATER_THAN       &trans          &trans           &kp RIGHT_SHIFT
-                                       &kp LEFT_CONTROL  &disable_2_moment_1_custom 0 2  &kp SPACE       &kp SPACE      &hold_tap_direct 1 3  &to 4
+&trans     &kp TILDE    &kp PERCENT    &kp CARET         &kp DLLR             &kp EQUAL       &kp BACKSLASH  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans          &trans           &trans
+&kp GRAVE  &kp AT_SIGN  &kp AMPERSAND  &kp HASH          &kp EXCLAMATION      &kp QUESTION    &kp SLASH      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE  &kp RIGHT_BRACE  &trans
+&kp LSHFT  &trans       &trans         &kp UNDERSCORE    &kp MINUS            &trans          &kp PIPE       &kp LESS_THAN         &kp GREATER_THAN       &trans          &trans           &kp RIGHT_SHIFT
+                                       &kp LEFT_CONTROL  &hold_tap_layer 1 2  &kp SPACE       &kp SPACE      &hold_tap_direct 1 3  &to 4
             >;
         };
 
         function_layer {
             display-name = "Function";
             bindings = <
-&trans  &trans  &trans  &trans            &next_tab             &trans       &kp F2        &trans               &trans  &trans  &trans  &task_manager
-&trans  &trans  &trans  &trans            &trans                &trans       &kp CAPSLOCK  &trans               &trans  &trans  &trans  &windows_options
-&trans  &trans  &trans  &trans            &trans                &trans       &trans        &trans               &trans  &trans  &trans  &trans
-                        &kp LEFT_CONTROL  &hold_tap_direct 1 2  &kp SPACE    &kp SPACE     &hold_tap_layer 1 3  &to 4
+&trans  &trans   &kp F2    &redo             &undo                 &find                  &trans             &trans               &kp UP_ARROW  &trans     &trans  &task_manager
+&trans  &reload  &paste    &cut              &copy                 &select_all            &trans             &kp LEFT             &kp DOWN      &kp RIGHT  &trans  &windows_options
+&trans  &trans   &save_as  &save             &new_window           &new_private_window    &kp RIGHT_CONTROL  &trans               &trans        &trans     &trans  &kp RIGHT_SHIFT
+                           &kp LEFT_CONTROL  &hold_tap_direct 1 2  &kp SPACE              &kp SPACE          &hold_tap_layer 1 3  &to 4
             >;
         };
 
@@ -550,7 +602,7 @@
             bindings = <
 &kp TAB           &shift_tab_right  &previous_tab  &kp UP_ARROW      &next_tab             &kp PAGE_UP         &kp A         &mkp MB1              &mmv MOVE_UP    &mkp MB2         &vlc_toggle_audio_device  &out OUT_TOG
 &previous_window  &shift_tab_left   &kp LEFT       &kp DOWN          &kp RIGHT             &kp PAGE_DOWN       &kp S         &mmv MOVE_LEFT        &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &windows_audio_device     &bt BT_CLR
-&kp LEFT_SHIFT    &kp F11           &trans         &kp P             &kp N                 &kp LEFT_CONTROL    &bt BT_SEL 0  &bt BT_SEL 1          &bt BT_SEL 2    &bt BT_SEL 3     &bt BT_SEL 4              &bt BT_CLR_ALL
+&kp LEFT_SHIFT    &kp F11           &kp P          &kp N             &kp LEFT_ALT          &kp LEFT_CONTROL    &bt BT_SEL 0  &bt BT_SEL 1          &bt BT_SEL 2    &bt BT_SEL 3     &bt BT_SEL 4              &bt BT_CLR_ALL
                                                    &kp LEFT_CONTROL  &hold_tap_direct 1 2  &kp SPACE           &kp SPACE     &hold_tap_direct 1 3  &tog 4
             >;
         };
