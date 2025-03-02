@@ -385,7 +385,7 @@
                 <&kp LEFT_CONTROL>,
                 <&macro_tap>,
                 <&kp S>,
-                <&macro_press>,
+                <&macro_release>,
                 <&kp LEFT_CONTROL>;
 
             label = "SAVE";
@@ -399,7 +399,7 @@
                 <&kp LEFT_CONTROL &kp LEFT_SHIFT>,
                 <&macro_tap>,
                 <&kp S>,
-                <&macro_press>,
+                <&macro_release>,
                 <&kp LEFT_CONTROL &kp LEFT_SHIFT>;
 
             label = "SAVE_AS";
@@ -413,7 +413,7 @@
                 <&kp LEFT_CONTROL>,
                 <&macro_tap>,
                 <&kp Z>,
-                <&macro_press>,
+                <&macro_release>,
                 <&kp LEFT_CONTROL>;
 
             label = "UNDO";
@@ -427,7 +427,7 @@
                 <&kp LEFT_CONTROL>,
                 <&macro_tap>,
                 <&kp O>,
-                <&macro_press>,
+                <&macro_release>,
                 <&kp LEFT_CONTROL>;
 
             label = "OPEN";
@@ -441,7 +441,7 @@
                 <&kp LEFT_CONTROL>,
                 <&macro_tap>,
                 <&kp C>,
-                <&macro_press>,
+                <&macro_release>,
                 <&kp LEFT_CONTROL>;
 
             label = "COPY";
