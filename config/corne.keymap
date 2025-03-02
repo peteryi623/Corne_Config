@@ -603,7 +603,7 @@
 &trans  &trans               &kp F2       &redo     &undo                 &find          &trans             &trans               &kp UP_ARROW  &trans     &trans  &task_manager
 &trans  &reload              &paste       &cut      &copy                 &select_all    &trans             &kp LEFT             &kp DOWN      &kp RIGHT  &trans  &windows_options
 &trans  &new_private_window  &new_window  &save_as  &save                 &reload        &kp RIGHT_CONTROL  &trans               &trans        &trans     &trans  &kp RIGHT_SHIFT
-                                          &to 0     &hold_tap_direct 1 2  &kp SPACE      &kp SPACE          &hold_tap_layer 1 3  &to 4
+                                          &tog 3    &hold_tap_direct 1 2  &kp SPACE      &kp SPACE          &hold_tap_layer 1 3  &to 4
             >;
         };
 
