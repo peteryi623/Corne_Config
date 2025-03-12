@@ -579,10 +579,10 @@
 
             display-name = "NavNum";
             bindings = <
-&kp TAB           &shift_tab_right  &previous_tab  &kp UP_ARROW    &next_tab     &kp PAGE_UP      &kp KP_PLUS   &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_MULTIPLY  &kp DEL
-&previous_window  &shift_tab_left   &kp LEFT       &kp DOWN        &kp RIGHT     &kp PAGE_DOWN    &kp KP_MINUS  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_DIVIDE    &trans
-&kp LEFT_SHIFT    &kp F11           &trans         &file_explorer  &kp LEFT_ALT  &kp LEFT_WIN     &kp KP_N0     &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp EQUAL        &kp RIGHT_CONTROL
-                                                   &trans          &trans        &kp SPACE        &kp SPACE     &trans     &trans
+&kp TAB           &shift_tab_right  &previous_tab  &kp UP_ARROW    &next_tab     &kp PAGE_UP      &kp KP_PLUS   &kp KP_N7  &kp KP_N8        &kp KP_N9  &kp KP_MULTIPLY  &kp BACKSPACE
+&previous_window  &shift_tab_left   &kp LEFT       &kp DOWN        &kp RIGHT     &kp PAGE_DOWN    &kp KP_MINUS  &kp KP_N4  &kp KP_N5        &kp KP_N6  &kp KP_DIVIDE    &kp DELETE
+&kp LEFT_SHIFT    &kp F11           &trans         &file_explorer  &kp LEFT_ALT  &kp LEFT_WIN     &trans        &kp KP_N1  &kp KP_N2        &kp KP_N3  &kp EQUAL        &kp RIGHT_CONTROL
+                                                   &trans          &trans        &kp SPACE        &kp SPACE     &trans     &kp KP_NUMBER_0
             >;
         };
 
@@ -590,8 +590,8 @@
             display-name = "Special";
             bindings = <
 &trans     &kp TILDE    &kp PERCENT    &kp CARET       &kp DLLR             &kp EQUAL       &kp BACKSLASH  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans          &trans           &trans
-&kp GRAVE  &kp AT_SIGN  &kp AMPERSAND  &kp HASH        &kp EXCLAMATION      &kp QUESTION    &kp SLASH      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE  &kp RIGHT_BRACE  &trans
-&kp LSHFT  &trans       &trans         &kp UNDERSCORE  &kp MINUS            &trans          &kp PIPE       &kp LESS_THAN         &kp GREATER_THAN       &trans          &trans           &kp RIGHT_SHIFT
+&kp GRAVE  &kp AT_SIGN  &kp AMPERSAND  &kp HASH        &kp EXCLAMATION      &kp QUESTION    &kp PIPE       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE  &kp RIGHT_BRACE  &trans
+&kp LSHFT  &trans       &trans         &kp UNDERSCORE  &kp MINUS            &trans          &kp SLASH      &kp LESS_THAN         &kp GREATER_THAN       &trans          &trans           &kp RIGHT_SHIFT
                                        &tog 3          &hold_tap_layer 1 2  &kp SPACE       &kp SPACE      &hold_tap_direct 1 3  &to 4
             >;
         };
@@ -599,8 +599,8 @@
         function_layer {
             display-name = "Function";
             bindings = <
-&trans  &trans               &kp F2       &redo     &undo                 &find          &kp CAPSLOCK       &kp PRINTSCREEN      &kp UP_ARROW  &trans     &trans  &task_manager
-&trans  &reload              &paste       &cut      &copy                 &select_all    &trans             &kp LEFT             &kp DOWN      &kp RIGHT  &trans  &windows_options
+&trans  &trans               &trans       &redo     &undo                 &find          &kp CAPSLOCK       &trans               &kp UP_ARROW  &trans     &trans  &task_manager
+&trans  &kp F2               &paste       &cut      &copy                 &select_all    &kp PRINTSCREEN    &kp LEFT             &kp DOWN      &kp RIGHT  &trans  &windows_options
 &trans  &new_private_window  &new_window  &save_as  &save                 &reload        &kp RIGHT_CONTROL  &trans               &trans        &trans     &trans  &kp RIGHT_SHIFT
                                           &tog 3    &hold_tap_direct 1 2  &kp SPACE      &kp SPACE          &hold_tap_layer 1 3  &to 4
             >;
