@@ -531,7 +531,7 @@
             hold-trigger-key-positions = <37 40>;
             bindings = <&mo>, <&tog>;
 
-            flavor = "tap-unless-interrupted";
+            flavor = "hold-preferred";
         };
 
         hold_tap_direct: hold_tap_direct {
@@ -542,7 +542,7 @@
             hold-trigger-key-positions = <37 40>;
             bindings = <&mo>, <&to>;
 
-            flavor = "tap-unless-interrupted";
+            flavor = "hold-preferred";
         };
 
         hold_key_tap_layer: hold_key_tap_layer {
@@ -553,7 +553,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <100>;
             hold-trigger-key-positions = <36>;
-            flavor = "tap-unless-interrupted";
+            flavor = "hold-preferred";
         };
     };
 
