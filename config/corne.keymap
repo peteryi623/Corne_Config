@@ -585,10 +585,10 @@
 
             display-name = "NavNum";
             bindings = <
-&kp TAB           &shift_tab_right  &previous_tab  &kp UP_ARROW  &next_tab     &kp PAGE_UP       &kp KP_PLUS   &kp KP_N7  &kp KP_N8        &kp KP_N9  &kp KP_MULTIPLY  &kp BACKSPACE
-&previous_window  &shift_tab_left   &kp LEFT       &kp DOWN      &kp RIGHT     &kp PAGE_DOWN     &kp KP_MINUS  &kp KP_N4  &kp KP_N5        &kp KP_N6  &kp KP_DIVIDE    &kp DELETE
-&kp LEFT_SHIFT    &kp F11           &mkp MB4       &mkp MB5      &kp LEFT_ALT  &file_explorer    &kp PERIOD    &kp KP_N1  &kp KP_N2        &kp KP_N3  &kp EQUAL        &kp RIGHT_CONTROL
-                                                   &trans        &trans        &kp SPACE         &kp SPACE     &trans     &kp KP_NUMBER_0
+&kp TAB           &shift_tab_right  &previous_tab        &kp UP_ARROW  &next_tab     &kp PAGE_UP       &kp KP_PLUS   &kp KP_N7  &kp KP_N8        &kp KP_N9  &kp KP_MULTIPLY  &kp BACKSPACE
+&previous_window  &shift_tab_left   &kp LEFT             &kp DOWN      &kp RIGHT     &kp PAGE_DOWN     &kp KP_MINUS  &kp KP_N4  &kp KP_N5        &kp KP_N6  &kp KP_DIVIDE    &kp DELETE
+&kp LEFT_SHIFT    &kp F11           &new_private_window  &kp F2        &kp LEFT_ALT  &file_explorer    &kp PERIOD    &kp KP_N1  &kp KP_N2        &kp KP_N3  &kp EQUAL        &kp RIGHT_CONTROL
+                                                         &trans        &trans        &kp SPACE         &kp SPACE     &trans     &kp KP_NUMBER_0
             >;
         };
 
@@ -605,9 +605,9 @@
         function_layer {
             display-name = "Function";
             bindings = <
-&trans  &trans  &trans  &trans  &kp F2                &trans       &kp CAPSLOCK       &trans               &kp UP_ARROW  &trans     &trans  &task_manager
+&trans  &trans  &trans  &trans  &trans                &trans       &kp CAPSLOCK       &trans               &kp UP_ARROW  &trans     &trans  &task_manager
 &trans  &trans  &cut    &paste  &copy                 &trans       &kp PRINTSCREEN    &kp LEFT             &kp DOWN      &kp RIGHT  &trans  &windows_options
-&trans  &trans  &trans  &trans  &trans                &trans       &kp RIGHT_CONTROL  &trans               &trans        &trans     &trans  &kp RIGHT_SHIFT
+&trans  &trans  &trans  &trans  &trans                &trans       &kp RIGHT_CONTROL  &trans               &trans        &trans     &trans  &trans
                         &tog 3  &hold_tap_direct 1 2  &kp SPACE    &kp SPACE          &hold_tap_layer 1 3  &to 4
             >;
         };
