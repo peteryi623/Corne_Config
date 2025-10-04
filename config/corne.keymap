@@ -602,7 +602,7 @@
 &kp TAB           &shift_tab_right  &previous_tab        &kp UP_ARROW  &next_tab     &kp PAGE_UP       &kp KP_PLUS   &kp KP_N7  &kp KP_N8        &kp KP_N9  &kp KP_MULTIPLY  &kp BACKSPACE
 &previous_window  &shift_tab_left   &kp LEFT             &kp DOWN      &kp RIGHT     &kp PAGE_DOWN     &kp KP_MINUS  &kp KP_N4  &kp KP_N5        &kp KP_N6  &kp KP_DIVIDE    &kp DELETE
 &kp LEFT_SHIFT    &kp F11           &new_private_window  &kp F2        &kp LEFT_ALT  &file_explorer    &kp PERIOD    &kp KP_N1  &kp KP_N2        &kp KP_N3  &kp EQUAL        &kp LEFT_CONTROL
-                                                         &trans        &trans        &kp SPACE         &kp SPACE     &trans     &kp KP_NUMBER_0
+                                                         &kp LEFT_WIN  &trans        &kp SPACE         &kp SPACE     &trans     &kp KP_NUMBER_0
             >;
         };
 
